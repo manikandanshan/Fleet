@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<fm_trip ID="1" VEHICLE_ID="1" ASSOCIATE_ID="1" STATUS="enable" CREATED_ON="2014-04-16" CREATED_BY="1" MODIFIED_ON="2014-05-16"/>
+	<fm_trip ID="2" VEHICLE_ID="2" ASSOCIATE_ID="1" STATUS="enable" CREATED_ON="2014-05-16" CREATED_BY="1" MODIFIED_ON="2014-06-16"/>
+</dataset>

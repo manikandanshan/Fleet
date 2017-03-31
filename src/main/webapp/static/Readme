@@ -1,0 +1,18 @@
+	1.BOOTSTRAP download link 
+ 	http://getbootstrap.com/
+ 	Required :- jQuery 1.1.9 to 3 (https://github.com/twbs/bootstrap/blob/v3.3.7/bower.json)
+ 	version 3.3.7 
+ 
+ 	2.JQUERY download link  
+  	https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/
+  	version 3.0.0
+  	  
+  	3. ANGULARJS download link
+  	https://code.angularjs.org/1.5.8/
+  	version 1.5.8
+  	
+  	4. UI-BOOTSTRAP download link
+  	http://angular-ui.github.io/bootstrap/versioned-docs/2.4.0/
+  	Required :-	AngularJS version 1.5.8, Bootstrap version 3.3.7
+  	version 2.4.0
+  	

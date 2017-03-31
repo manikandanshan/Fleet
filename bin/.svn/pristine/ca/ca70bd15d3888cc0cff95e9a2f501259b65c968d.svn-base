@@ -1,0 +1,16 @@
+package com.fleet.dao;
+
+import com.fleet.model.User;
+
+/**
+ * @author rameshbabu
+ *
+ */
+
+
+public interface UserDao extends CrudDao< User>{
+	
+	User findBySSO(String sso);
+	void deleteBySSO(String sso);
+	}
+

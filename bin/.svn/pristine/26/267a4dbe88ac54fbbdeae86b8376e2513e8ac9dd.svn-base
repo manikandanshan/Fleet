@@ -1,0 +1,11 @@
+package com.fleet.dao.impl;
+import org.springframework.stereotype.Repository;
+
+import com.fleet.dao.PrivilegeDao;
+import com.fleet.model.Privilege;
+@Repository("PrivilegeDao")
+public class PrivilegeDaoImpl extends CrudDaoImpl<Privilege> implements PrivilegeDao {
+	
+}
+
+

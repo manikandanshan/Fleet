@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.fleet.dao.impl;
+
+import org.springframework.stereotype.Repository;
+
+import com.fleet.dao.ClientDao;
+import com.fleet.model.Client;
+
+/**
+ * @author shine
+ *
+ */
+
+@Repository("ClientDao")
+public class ClientDaoImpl extends CrudDaoImpl< Client> implements ClientDao {
+
+}

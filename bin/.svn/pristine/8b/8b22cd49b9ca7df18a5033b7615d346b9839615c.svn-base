@@ -1,0 +1,19 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<style>
+	footer {
+    padding: 1em;
+    color: black;
+    background-color: lightblue;
+    clear: left;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<footer >
+<p>Copyright &copy; www.guruits.com</p>
+</footer>
+</body>
+</html>

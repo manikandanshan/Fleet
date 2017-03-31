@@ -1,0 +1,103 @@
+package com.fleet.model;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+
+import org.springframework.format.annotation.DateTimeFormat;
+@Entity
+@Table(name = "role_privilege")
+
+public class RolePrivilege implements java.io.Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4793855079543990822L;
+
+	public RolePrivilege() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer Id;
+
+	@NotNull
+	@Column(name = "PRIVILEGE_ID", nullable = false)
+	private Integer privilegeId ;
+	
+	@NotNull
+	@Column(name = "FEATURE_ID", nullable = false)
+	private Integer featureId;
+	
+	@NotNull
+	@Column(name = "IS_ENABLED", nullable = false)
+	private Integer isEnabled;
+	
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@Column(name = "CREATED_ON", nullable = false)
+	private Date createdOn;
+	
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@Column(name = "MODIFIED_ON", nullable = false)
+	private Date modifiedOn;
+
+	
+
+	public Integer getId() {
+		return Id;
+	}
+
+	public void setId(Integer id) {
+		Id = id;
+	}
+
+	public Integer getPrivilegeId() {
+		return privilegeId;
+	}
+
+	public void setPrivilegeId(Integer privilegeId) {
+		this.privilegeId = privilegeId;
+	}
+
+	public Integer getFeatureId() {
+		return featureId;
+	}
+
+	public void setFeatureId(Integer featureId) {
+		this.featureId = featureId;
+	}
+
+	public Integer getIsEnabled() {
+		return isEnabled;
+	}
+
+	public void setIsEnabled(Integer isEnabled) {
+		this.isEnabled = isEnabled;
+	}
+
+	public Date getCreatedOn() {
+		return createdOn;
+	}
+
+	public void setCreatedOn(Date createdOn) {
+		this.createdOn = createdOn;
+	}
+
+	public Date getModifiedOn() {
+		return modifiedOn;
+	}
+
+	public void setModifiedOn(Date modifiedOn) {
+		this.modifiedOn = modifiedOn;
+	}
+
+	
+	
+}
+

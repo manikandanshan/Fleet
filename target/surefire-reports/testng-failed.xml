@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.fleet.dao.ServiceStationDaoImplTest">
+        <methods>
+          <include name="delete"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="findAll"/>
+          <include name="deleteByInvalid"/>
+          <include name="save"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="find"/>
+        </methods>
+      </class> <!-- com.fleet.dao.ServiceStationDaoImplTest -->
+      <class name="com.fleet.dao.PrivilegeDaoImplTest">
+        <methods>
+          <include name="deleteByInvalid"/>
+          <include name="findById"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="findAllPrivilege"/>
+          <include name="save"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="delete"/>
+        </methods>
+      </class> <!-- com.fleet.dao.PrivilegeDaoImplTest -->
+      <class name="com.fleet.dao.TripDetailDaoImplTest">
+        <methods>
+          <include name="find"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="deleteByInvalid"/>
+          <include name="save"/>
+          <include name="delete"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="findAll"/>
+        </methods>
+      </class> <!-- com.fleet.dao.TripDetailDaoImplTest -->
+      <class name="com.fleet.dao.UserDaoImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="findAll"/>
+          <include name="find"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="delete"/>
+          <include name="deleteByInvalidCode"/>
+        </methods>
+      </class> <!-- com.fleet.dao.UserDaoImplTest -->
+      <class name="com.fleet.controller.AppControllerTest">
+        <methods>
+          <include name="deleteEmployee"/>
+          <include name="saveEmployeeWithSuccess"/>
+          <include name="newEmployee"/>
+          <include name="editEmployee"/>
+          <include name="listEmployees"/>
+          <include name="updateEmployeeWithSuccess"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.fleet.controller.AppControllerTest -->
+      <class name="com.fleet.dao.ClientDaoImplTest">
+        <methods>
+          <include name="save"/>
+          <include name="find"/>
+          <include name="deleteByInvalid"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="delete"/>
+          <include name="findAll"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.fleet.dao.ClientDaoImplTest -->
+      <class name="com.fleet.dao.UserRoleDaoImplTest">
+        <methods>
+          <include name="find"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="delete"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="save"/>
+          <include name="findAll"/>
+          <include name="deleteByInvalid"/>
+        </methods>
+      </class> <!-- com.fleet.dao.UserRoleDaoImplTest -->
+      <class name="com.fleet.dao.AssociateDaoImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="setUp"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="findAll"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="deleteByInvalid"/>
+          <include name="delete"/>
+          <include name="find"/>
+          <include name="save"/>
+        </methods>
+      </class> <!-- com.fleet.dao.AssociateDaoImplTest -->
+      <class name="com.fleet.dao.FeatureDaoImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="saveFeature"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="findFeatureByName"/>
+          <include name="findAllFeatures"/>
+          <include name="deleteFeatureByInvalid"/>
+          <include name="deleteFeature"/>
+          <include name="findById"/>
+        </methods>
+      </class> <!-- com.fleet.dao.FeatureDaoImplTest -->
+      <class name="com.fleet.service.EmployeeServiceImplTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.fleet.service.EmployeeServiceImplTest -->
+      <class name="com.fleet.dao.RoleDaoImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="findAll"/>
+          <include name="deleteByInvalidCode"/>
+          <include name="find"/>
+          <include name="delete"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="save"/>
+        </methods>
+      </class> <!-- com.fleet.dao.RoleDaoImplTest -->
+      <class name="com.fleet.dao.UserTypeDaoImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="save"/>
+          <include name="deleteByInvalid"/>
+          <include name="delete"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="findAll"/>
+          <include name="find"/>
+        </methods>
+      </class> <!-- com.fleet.dao.UserTypeDaoImplTest -->
+      <class name="com.fleet.dao.EmployeeDaoImplTest">
+        <methods>
+          <include name="findById"/>
+          <include name="findAllEmployees"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="deleteEmployeeBySsn"/>
+          <include name="findEmployeeBySsn"/>
+          <include name="saveEmployee"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="deleteEmployeeByInvalidSsn"/>
+        </methods>
+      </class> <!-- com.fleet.dao.EmployeeDaoImplTest -->
+      <class name="com.fleet.dao.ServiceDetailDaoImplTest">
+        <methods>
+          <include name="deleteByInvalid"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="findAll"/>
+          <include name="delete"/>
+          <include name="find"/>
+          <include name="save"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.fleet.dao.ServiceDetailDaoImplTest -->
+      <class name="com.fleet.dao.TripDaoImplTest">
+        <methods>
+          <include name="save"/>
+          <include name="deleteByInvalid"/>
+          <include name="delete"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="find"/>
+          <include name="findAll"/>
+        </methods>
+      </class> <!-- com.fleet.dao.TripDaoImplTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

@@ -1,0 +1,35 @@
+package com.fleet.dao.impl;
+import org.hibernate.Criteria;
+import org.hibernate.Hibernate;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.stereotype.Repository;
+
+import com.fleet.dao.UserDao;
+import com.fleet.model.User;
+@Repository("UserDao")
+public class UserDaoImpl extends CrudDaoImpl< User> implements UserDao {
+
+	public User findBySSO(String sso) {
+		//logger.info("SSO : {}", sso);
+		Criteria crit = createEntityCriteria();
+		crit.add(Restrictions.eq("ssoId", sso));
+		User user = (User)crit.uniqueResult();
+		if(user!=null){
+			Hibernate.initialize(user.getRoles());
+		}
+		return user;
+	}
+	public void deleteBySSO(String sso) {
+		Criteria crit = createEntityCriteria();
+		crit.add(Restrictions.eq("ssoId", sso));
+		User user = (User)crit.uniqueResult();
+		delete(user);
+	}
+
+	
+
+	
+
+	
+}
+

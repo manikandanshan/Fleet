@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.2//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+<definition name="DefaultTemplate" 
+      template="/WEB-INF/views/template/SiteTemplate.jsp">
+<put-attribute name="title" value=""></put-attribute>
+<put-attribute name="header" value="/WEB-INF/views/template/header.jsp"></put-attribute>
+<put-attribute name="menu" value="/WEB-INF/views/template/menu.jsp"></put-attribute>
+<put-attribute name="body" value=""></put-attribute>
+<put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp"></put-attribute>
+</definition>
+
+<definition name="LoginTemplate" 
+      template="/WEB-INF/views/login/logintemplate.jsp">
+<put-attribute name="title" value=""></put-attribute>
+<put-attribute name="header-login" value="/WEB-INF/views/login/header-login.jsp"></put-attribute>
+<put-attribute name="menu-login" value="/WEB-INF/views/login/menu-login.jsp"></put-attribute>
+<put-attribute name="body-login" value="/WEB-INF/views/login/login.jsp"></put-attribute>
+<put-attribute name="footer-login" value="/WEB-INF/views/template/footer.jsp"></put-attribute>
+</definition>
+<definition extends="LoginTemplate" name="login">
+<put-attribute name="title" value="Login Page"></put-attribute>
+<put-attribute name="body-login" value="/WEB-INF/views/login/login.jsp" />
+</definition>
+
+<definition extends="LoginTemplate" name="new-users">
+<put-attribute name="title" value="Registration User"></put-attribute>
+<put-attribute name="body-login" value="/WEB-INF/views/new/new-users.jsp" />
+</definition>
+
+<definition extends="LoginTemplate" name="accessDenied">
+<put-attribute name="title" value="Access Denied"></put-attribute>
+<put-attribute name="body-login" value="/WEB-INF/views/accessDenied.jsp" />
+</definition>
+
+<definition extends="LoginTemplate" name="registrationSuccess">
+<put-attribute name="title" value="Succesfully Registered"></put-attribute>
+<put-attribute name="body-login" value="/WEB-INF/views/registrationsuccess.jsp" />
+</definition>
+
+<definition extends="LoginTemplate" name="list-users">
+<put-attribute name="title" value="List of User"></put-attribute>
+<put-attribute name="body-login" value="/WEB-INF/views/list/list-users.jsp" />
+</definition>
+
+<definition extends="LoginTemplate" name="authheader">
+<put-attribute name="title" value="Authentication"></put-attribute>
+<put-attribute name="body-login" value="/WEB-INF/views/authheader.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-default">
+<put-attribute name="title" value="Add Client Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/template/list-default.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-users">
+<put-attribute name="title" value="List of User"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-users.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="new-users">
+<put-attribute name="title" value="Registration User"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-users.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-client">
+<put-attribute name="title" value="List Client Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-client.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-client">
+<put-attribute name="title" value="Add Client Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-client.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-client">
+<put-attribute name="title" value="Update Client Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-client.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-company">
+<put-attribute name="title" value="List Company Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-company.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-company">
+<put-attribute name="title" value="Add Company Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-company.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-company">
+<put-attribute name="title" value="Update Company Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-company.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-branch">
+<put-attribute name="title" value="List Branch Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-branch.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-branch">
+<put-attribute name="title" value="Add Branch Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-branch.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-branch">
+<put-attribute name="title" value="Update Branch Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-branch.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-associate">
+<put-attribute name="title" value="List Associate Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-associate.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-associate">
+<put-attribute name="title" value="Add Associate Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-associate.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-associate">
+<put-attribute name="title" value="Update Associate Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-associate.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-associate-type">
+<put-attribute name="title" value="List Associate Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-associate-type.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-associate-type">
+<put-attribute name="title" value="Add Associate Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-associate-type.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-associate-type">
+<put-attribute name="title" value="Update Associate Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-associate-type.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-feature">
+<put-attribute name="title" value="List Feature Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-feature.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-feature">
+<put-attribute name="title" value="Add Feature Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-feature.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-feature">
+<put-attribute name="title" value="Update Feature Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-feature.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-fitness-certificate">
+<put-attribute name="title" value="List Fitness Certificate Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-fitness-certificate.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-fitness-certificate">
+<put-attribute name="title" value="Add Fitness Certificate Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-fitness-certificate.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-fitness-certificate">
+<put-attribute name="title" value="Update Fitness Certificate Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-fitness-certificate.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-fuel-station">
+<put-attribute name="title" value="List Fuel Station Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-fuel-station.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-fuel-station">
+<put-attribute name="title" value="Add Fuel Station Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-fuel-station.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-fuel-station">
+<put-attribute name="title" value="Update Fuel Station Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-fuel-station.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-fuel-type">
+<put-attribute name="title" value="List Fuel Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-fuel-type.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-fuel-type">
+<put-attribute name="title" value="Add Fuel Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-fuel-type.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-fuel-type">
+<put-attribute name="title" value="Update Fuel Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-fuel-type.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-insurance-provider">
+<put-attribute name="title" value="List Insurance Provider Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-insurance-provider.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-insurance-provider">
+<put-attribute name="title" value="Add insurance-provider Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-insurance-provider.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-insurance-provider">
+<put-attribute name="title" value="Update Insurance Provider Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-insurance-provider.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-privilege">
+<put-attribute name="title" value="List Privilege Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-privilege.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-privilege">
+<put-attribute name="title" value="Add Privilege Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-privilege.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-privilege">
+<put-attribute name="title" value="Update Privilege Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-privilege.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-product-vendor">
+<put-attribute name="title" value="List Product Vendor Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-product-vendor.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-product-vendor">
+<put-attribute name="title" value="Add Product Vendor Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-product-vendor.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-product-vendor">
+<put-attribute name="title" value="Update Product Vendor Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-product-vendor.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-service">
+<put-attribute name="title" value="List Service Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-service.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-service">
+<put-attribute name="title" value="Add service Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-service.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-service">
+<put-attribute name="title" value="Update service Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-service.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-service-detail">
+<put-attribute name="title" value="List Service Detail Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-service-detail.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-service-detail">
+<put-attribute name="title" value="Add Service Detail Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-service-detail.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-service-detail">
+<put-attribute name="title" value="Update Service Detail Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-service-detail.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-service-station">
+<put-attribute name="title" value="List Service Station Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-service-station.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-service-station">
+<put-attribute name="title" value="Add Service Station Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-service-station.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-service-station">
+<put-attribute name="title" value="Update Service Station Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-service-station.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-trip">
+<put-attribute name="title" value="List Trip Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-trip.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-trip">
+<put-attribute name="title" value="Add Trip Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-trip.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-trip">
+<put-attribute name="title" value="Update Trip Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-trip.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-trip-detail">
+<put-attribute name="title" value="List Trip Detail Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-trip-detail.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-trip-detail">
+<put-attribute name="title" value="Add Trip Detail Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-trip-detail.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-trip-detail">
+<put-attribute name="title" value="Update Trip Detail Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-trip-detail.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-user-type">
+<put-attribute name="title" value="List User Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-user-type.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-user-type">
+<put-attribute name="title" value="Add User Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-user-type.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-user-type">
+<put-attribute name="title" value="Update User Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-user-type.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-vehicle">
+<put-attribute name="title" value="List Vehicle Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-vehicle.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-vehicle">
+<put-attribute name="title" value="Add Vehicle Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-vehicle.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-vehicle">
+<put-attribute name="title" value="Update Vehicle Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-vehicle.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-vehicle-insurance">
+<put-attribute name="title" value="List Vehicle Insurance Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-vehicle-insurance.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-vehicle-insurance">
+<put-attribute name="title" value="Add Vehicle Insurance Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-vehicle-insurance.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-vehicle-insurance">
+<put-attribute name="title" value="Update Vehicle Insurance Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-vehicle-insurance.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-vehicle-type">
+<put-attribute name="title" value="List Vehicle Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-vehicle-type.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-vehicle-type">
+<put-attribute name="title" value="Add Vehicle Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-vehicle-type.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-vehicle-type">
+<put-attribute name="title" value="Update Vehicle Type Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-vehicle-type.jsp" />
+</definition>
+
+<definition extends="DefaultTemplate" name="list-vendor-detail">
+<put-attribute name="title" value="List Vendo Detail Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/list/list-vendor-detail.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="new-vendor-detail">
+<put-attribute name="title" value="Add Vendor Detail Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/new/new-vendor-detail.jsp" />
+</definition>
+<definition extends="DefaultTemplate" name="update-vendor-detail">
+<put-attribute name="title" value="Update Vendor Detail Data Form"></put-attribute>
+<put-attribute name="body" value="/WEB-INF/views/update/update-vendor-detail.jsp" />
+</definition>
+</tiles-definitions>	
